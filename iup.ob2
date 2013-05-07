@@ -1,4 +1,9 @@
 <*+O2EXTENSIONS*>
+(**
+ * IUP - A Portable User Interface Toolkit
+ * Tecgraf: Computer Graphics Technology Group, PUC-Rio, Brazil
+ * http://www.tecgraf.puc-rio.br/iup  mailto:iup@tecgraf.puc-rio.br
+ *)
 MODULE Iup;
 IMPORT SYSTEM;
 CONST
