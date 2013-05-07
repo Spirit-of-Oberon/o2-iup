@@ -16,7 +16,7 @@ TYPE
     IstringList*  = ARRAY OF Istring;
     Ipointer*     = POINTER TO RECORD END;
     IpointerList* = ARRAY OF Ipointer;
-    Icallback*    = PROCEDURE ["C"] (self: Ihandle);
+    Icallback*    = SYSTEM.ADDRESS;
     Iparamcb*     = PROCEDURE ["C"] (dialog: Ihandle; param_index: LONGINT; user_data: Ipointer);
 
 (* MAIN API *)
@@ -44,7 +44,7 @@ PROCEDURE ["C"] / MapFont*    (iupfont:    Istring): Istring;
 PROCEDURE ["C"] / UnMapFont*  (driverfont: Istring): Istring;
 PROCEDURE ["C"] / Help*       (url:        Istring): LONGINT;
 PROCEDURE ["C"] / Load*       (filename:   Istring): Istring;
-PROCEDURE ["C"] / LoadBuffer* (buffer:      Istring): Istring;
+PROCEDURE ["C"] / LoadBuffer* (buffer:     Istring): Istring;
 
 PROCEDURE ["C"] / Version*       (): Istring;
 PROCEDURE ["C"] / VersionDate*   (): Istring;
