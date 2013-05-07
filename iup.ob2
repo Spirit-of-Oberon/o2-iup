@@ -10,9 +10,9 @@ CONST
     NAME = "IUP - Portable User Interface";
     COPYRIGHT = "Copyright (C) 1994-2012 Tecgraf, PUC-Rio.";
     DESCRIPTION = "Multi-platform toolkit for building graphical user interfaces.";
-    VERSION = "3.7";  (* bug fixes are reported only by IupVersion functions *)
+    VERSION = "3.7";
     VERSION_NUMBER = 307000;
-    VERSION_DATE = "2012/11/29";  (* does not include bug fix releases *)
+    VERSION_DATE = "2012/11/29";
 
     (* Common Return Values *)
 
